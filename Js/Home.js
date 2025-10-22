@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
       } else {
-        // Quand on quitte la zone visible, on enlève la classe pour rejouer l’animation
+        // Quand on quitte la zone visible, on enlèv la classe pour rejouer l’animation
         entry.target.classList.remove('show');
       }
     });
