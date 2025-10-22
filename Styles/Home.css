@@ -273,7 +273,7 @@ body
 .fade-in-right.show {
   animation: fadeInRight 0.8s ease-out forwards;
 }
-
+/*  */
 .zoom-in.show {
   animation: zoomIn 0.8s ease-out forwards;
 }
