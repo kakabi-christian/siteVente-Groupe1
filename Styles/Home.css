@@ -1,0 +1,208 @@
+*
+{
+    padding:0;
+    margin: 0;
+}
+:root 
+{
+  --red: hsl(0, 66%, 54%);
+  --grey-900: hsl(187, 24%, 22%);
+  --green-600: hsl(169, 82%, 27%);
+  --black:black;
+  --sizeNav:27px;
+    --grey-500: hsl(186, 15%, 59%);
+      --grey-900: hsl(187, 24%, 22%);
+
+
+
+}
+.container
+{
+    padding-top: 15px;
+}
+.Header-container
+{
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    /* position: fixed; */
+}
+.nav-bar ul li 
+{
+    list-style: none;
+}
+.nav-bar ul li a
+{
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--sizeNav);
+
+}
+.nav-bar ul 
+{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.nav-bar
+{
+    margin-left: 16%;
+}
+.logo img
+{
+    width: 150px;
+    height: auto;
+}
+.logo-name
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo-name img
+{
+    width: 70px;
+    border-radius: 100%;
+    height: 70px;
+}
+body
+{
+    /* background-color: var(--grey-500); */
+    background-color: white;
+    font-family: "Poppins";
+}
+.name h2
+{
+    font-size: 30px;
+    color: black;
+}
+.registerClass,.LoginClass
+{
+    border: 2px black solid;
+    text-align: center;
+    padding: 5px;
+    width: 230px;
+    border-radius: 7px;
+    border-color: var(--green-600);
+}
+.container-car-img img
+{
+    width: 100%;
+    height: 710px;
+}
+.cars-and-text
+{
+    margin-top: -15%;
+    padding-left: 100px;
+
+}
+.cars-and-text p 
+{
+    color: white;
+    font-size: 75px;
+}
+.cars-and-text span
+{
+    color: white;
+    font-size: 21px;
+    padding-left: 80px;
+    text-align: center;
+}
+.popular-mark
+{
+    font-size: 40px;
+}
+.web-container-down
+{
+    margin-top: 6%;
+    padding-left: 70px;
+    font-weight: bold;
+}
+.brand-first,.brand-second
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#brand img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 12%;
+}
+#brand
+{
+    margin-top: 1%;
+    width: 140px;
+    border: 1px black solid;
+    height: 100px;
+    padding: 30px;
+    margin-bottom: 1%;
+    border-radius: 7px;
+}
+#Vedettes
+{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+.cars-img
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 2%;
+}
+.cars img
+{
+    width: 565px;
+    height: 280px;
+}
+.cars-stats
+{
+    display: flex;
+    gap: 50%;
+    padding: 25px;
+}
+
+.stat-right i
+{
+    font-size: 30px;
+    cursor: pointer;
+}
+.stat-left
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.model,.year 
+{
+    color: var(--grey-900);
+    font-size: 19px;
+}
+.cars
+{
+    border: 1px black solid;
+    margin-bottom: 1%;
+}
+.footer-text
+{
+    font-size: 50px;
+    text-align: center;
+}
+.join
+{
+    font-size: 27px;
+    text-align: center;
+}
+.footer
+{
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 200px;
+}
