@@ -1,0 +1,1 @@
+const containerCarImg = document.querySelector(".container-car-img");
