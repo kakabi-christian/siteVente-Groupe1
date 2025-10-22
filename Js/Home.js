@@ -8,9 +8,9 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
+        entry.target.classList.add('show'); 
       } else {
-        // Quand on quitte la zone visible, on enlèv la classe pour rejouer l’animation
+        // Quand on quitte la zone visible, on retire la classe pour rejouer l’animation
         entry.target.classList.remove('show');
       }
     });
