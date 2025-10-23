@@ -202,13 +202,17 @@ body {
   display: flex;
   gap: 50%;
   padding: 25px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .stat-right i {
   font-size: 30px;
   cursor: pointer;
-  color: gold;
+  color: linear-gradient(
+    180deg,
+    rgba(11, 28, 44, 0.95) 0%,
+    rgba(11, 28, 44, 0.8) 100%
+  );;
   /* color: red; */
 }
 .stat-left {
