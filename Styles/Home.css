@@ -1,0 +1,411 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --red: hsl(0, 66%, 54%);
+  --grey-900: hsl(187, 24%, 22%);
+  --green-600: hsl(169, 82%, 27%);
+  --black: black;
+  --sizeNav: 27px;
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
+  --accent-gold: #d4af37;
+  --medium-gray: #b0b0b0;
+  --dark-gray: #1a1d21;
+}
+.container {
+  padding-top: 15px;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  background: linear-gradient(
+    180deg,
+    rgba(11, 28, 44, 0.95) 0%,
+    rgba(11, 28, 44, 0.8) 100%
+  );
+}
+.Header-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+
+  /* position: fixed; */
+}
+.nav-link {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-gold);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+.nav-bar ul li {
+  list-style: none;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  /* color: var(--black); */
+  font-size: var(--sizeNav);
+}
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.nav-bar {
+  margin-left: 16%;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+  border: 2px gold solid;
+  box-shadow: 0 0 10px gold;
+}
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.logo-name img {
+  width: 70px;
+  border-radius: 100%;
+  height: 70px;
+}
+body {
+  /* background-color: white; */
+
+  font-family: "Poppins";
+  background: linear-gradient(
+    180deg,
+    rgba(11, 28, 44, 0.95) 0%,
+    rgba(11, 28, 44, 0.8) 100%
+  );
+}
+.name h2 {
+  font-size: 30px;
+  color: white;
+}
+.registerClass,
+.LoginClass {
+  border: 2px black solid;
+  text-align: center;
+  padding: 5px;
+  width: 230px;
+  border-radius: 7px;
+  border-color: gold;
+}
+.container-car-img img {
+  width: 100%;
+  height: 710px;
+  transition: 0.5s eas;
+}
+.cars-and-text {
+  margin-top: -15%;
+  padding-left: 100px;
+}
+.cars-and-text p {
+  color: white;
+  font-size: 75px;
+}
+.cars-and-text span {
+  color: white;
+  font-size: 32px;
+  padding-left: 2px;
+  text-align: center;
+}
+.img img {
+  cursor: pointer;
+}
+
+.popular-mark {
+  font-size: 40px;
+  color: white;
+}
+.web-container-down {
+  margin-top: 6%;
+  padding-left: 70px;
+  font-weight: bold;
+}
+.brand-first,
+.brand-second {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#brand img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-left: 12%;
+  cursor: pointer;
+}
+#brand {
+  margin-top: 1%;
+  width: 140px;
+  border: 1px white solid;
+  height: 100px;
+  padding: 30px;
+  margin-bottom: 1%;
+  border-radius: 7px;
+  box-shadow: 0 0 15px black;
+}
+#brand:hover {
+  margin-top: 1%;
+  width: 140px;
+  border: 1px white solid;
+  height: 100px;
+  padding: 30px;
+  margin-bottom: 1%;
+  border-radius: 7px;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: 0.4s ease-in;
+  border-color: gold;
+}
+#Vedettes {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  color: white;
+}
+.cars-img {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 2%;
+}
+.cars img {
+  width: 565px;
+  height: 280px;
+}
+.cars-stats {
+  display: flex;
+  gap: 50%;
+  padding: 25px;
+  background-color: whitesmoke;
+}
+
+.stat-right i {
+  font-size: 30px;
+  cursor: pointer;
+  color: linear-gradient(
+    180deg,
+    rgba(11, 28, 44, 0.95) 0%,
+    rgba(11, 28, 44, 0.8) 100%
+  );
+  /* color: red; */
+}
+.stat-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.model,
+.year {
+  color: var(--grey-900);
+  font-size: 19px;
+}
+.cars {
+  border: 1px black solid;
+  margin-bottom: 1%;
+}
+.footer-text {
+  font-size: 50px;
+  text-align: center;
+}
+.logo-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px gold solid;
+  box-shadow: 0 0 10px gold;
+}
+.brand-name {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.join {
+  font-size: 27px;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  background: var(--dark-gray);
+  padding: 40px 0 20px;
+  border-top: 2px solid var(--accent-gold);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-slogan {
+  font-size: 14px;
+  color: var(--accent-gold);
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--medium-gray);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-gold);
+}
+
+.footer-copyright {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright p {
+  color: var(--medium-gray);
+  font-size: 14px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOutCarousel {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in-out-carousel {
+  animation: fadeInOutCarousel 3s ease-in-out forwards; /* Durée égale à l'intervalle JS */
+}
+.fade-in-up.show {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-left.show {
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.fade-in-right.show {
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+/*  */
+.zoom-in.show {
+  animation: zoomIn 0.8s ease-out forwards;
+}
+
+/* Délais pour les animations pour un effet de cascade */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+/* Tu peux ajouter plus de délais si nécessaire */
+.animate-on-scroll.show.delay-1 { animation-delay: 0.1s; }
+.animate-on-scroll.show.delay-2 { animation-delay: 0.2s; }
+.animate-on-scroll.show.delay-3 { animation-delay: 0.3s; }
+.animate-on-scroll.show.delay-4 { animation-delay: 0.4s; }
+.animate-on-scroll.show.delay-5 { animation-delay: 0.5s; }
+.animate-on-scroll.show.delay-6 { animation-delay: 0.6s; }
