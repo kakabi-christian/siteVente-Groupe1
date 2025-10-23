@@ -22,3 +22,17 @@ const observer = new IntersectionObserver(
 
 // Observe chaque élément
 animatedElements.forEach((el) => observer.observe(el));
+
+
+let carsImg =document.querySelector(".img-cars");
+let images =['../Assets/Voiture/voiture1.png','../Assets/Voiture/voiture19.jpg','../Assets/Voiture/voiture22.jpg','../Assets/Voiture/voiture21.jpg','../Assets/Voiture/voiture6.jpg']
+let index=0;
+const changeImage = ()=>
+{
+  index=(index+1)%images.length;
+  carsImg.src=images[index];
+}
+setInterval(() => {
+  changeImage();
+  
+}, 5000);
