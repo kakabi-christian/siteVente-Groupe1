@@ -45,9 +45,8 @@ body {
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 .Header-container {
-  height: 1px;
-  padding-top: 55px;
-  
+  height: 100px;
+  /* padding-top: 75px; */
 }
 
 .header-content {
